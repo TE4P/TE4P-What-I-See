@@ -270,6 +270,7 @@
     if (event.subtype == UIEventSubtypeMotionShake)
     {
         [self loadDataFromServer];
+        // comemnt
     }
 }
 
