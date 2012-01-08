@@ -117,7 +117,7 @@
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
     [request setHTTPMethod:@"POST"];
-    [request setHTTPBody:UIImageJPEGRepresentation(image, 75)];
+    [request setHTTPBody:UIImageJPEGRepresentation(image, 0.75)];
     
     // hide camera 
     [UIView transitionWithView:self.view duration:0.5 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
