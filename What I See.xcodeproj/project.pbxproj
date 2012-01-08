@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C8C168314B9524A009DBDAB /* 1325996723_Black_Camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C8C168214B9524A009DBDAB /* 1325996723_Black_Camera.png */; };
 		9C80FD6614B7FE9A003AE42E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C80FD6514B7FE9A003AE42E /* UIKit.framework */; };
 		9C80FD6814B7FE9A003AE42E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C80FD6714B7FE9A003AE42E /* Foundation.framework */; };
 		9C80FD6A14B7FE9A003AE42E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C80FD6914B7FE9A003AE42E /* CoreGraphics.framework */; };
@@ -27,26 +28,25 @@
 		9C80FD9814B80C50003AE42E /* MugPile.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C80FD9714B80C50003AE42E /* MugPile.m */; };
 		9C80FD9B14B829E4003AE42E /* pictureRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C80FD9A14B829E4003AE42E /* pictureRow.m */; };
 		9C80FD9E14B830F6003AE42E /* SmartImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C80FD9D14B830F6003AE42E /* SmartImage.m */; };
-		9C80FDA014B838A9003AE42E /* black_camera_photo_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C80FD9F14B838A8003AE42E /* black_camera_photo_icon.png */; };
 		9C80FDA614B839C3003AE42E /* TakePhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C80FDA514B839C3003AE42E /* TakePhoto.m */; };
 		9C80FDAA14B84E22003AE42E /* notfound.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C80FDA914B84E22003AE42E /* notfound.jpg */; };
 		9C80FDAD14B856F1003AE42E /* LargeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C80FDAC14B856F1003AE42E /* LargeImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9C80FD6114B7FE9A003AE42E /* project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C8C168214B9524A009DBDAB /* 1325996723_Black_Camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1325996723_Black_Camera.png; sourceTree = "<group>"; };
+		9C80FD6114B7FE9A003AE42E /* What I See.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What I See.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C80FD6514B7FE9A003AE42E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9C80FD6714B7FE9A003AE42E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9C80FD6914B7FE9A003AE42E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9C80FD6D14B7FE9A003AE42E /* project1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "project1-Info.plist"; sourceTree = "<group>"; };
+		9C80FD6D14B7FE9A003AE42E /* What I See-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "What I See-Info.plist"; sourceTree = "<group>"; };
 		9C80FD6F14B7FE9A003AE42E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9C80FD7114B7FE9B003AE42E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9C80FD7314B7FE9B003AE42E /* project1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "project1-Prefix.pch"; sourceTree = "<group>"; };
+		9C80FD7314B7FE9B003AE42E /* What I See-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "What I See-Prefix.pch"; sourceTree = "<group>"; };
 		9C80FD7414B7FE9B003AE42E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9C80FD7514B7FE9B003AE42E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9C80FD7814B7FE9B003AE42E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		9C80FD7B14B7FE9B003AE42E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		9C80FD7D14B7FE9B003AE42E /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		9C80FD7E14B7FE9B003AE42E /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		9C80FD8014B7FE9B003AE42E /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		9C80FD8214B7FE9B003AE42E /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
@@ -63,12 +63,11 @@
 		9C80FD9A14B829E4003AE42E /* pictureRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pictureRow.m; sourceTree = "<group>"; };
 		9C80FD9C14B830F6003AE42E /* SmartImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartImage.h; sourceTree = "<group>"; };
 		9C80FD9D14B830F6003AE42E /* SmartImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartImage.m; sourceTree = "<group>"; };
-		9C80FD9F14B838A8003AE42E /* black_camera_photo_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_camera_photo_icon.png; sourceTree = "<group>"; };
 		9C80FDA414B839C3003AE42E /* TakePhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TakePhoto.h; path = ../TakePhoto.h; sourceTree = "<group>"; };
 		9C80FDA514B839C3003AE42E /* TakePhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TakePhoto.m; path = ../TakePhoto.m; sourceTree = "<group>"; };
 		9C80FDA914B84E22003AE42E /* notfound.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = notfound.jpg; sourceTree = "<group>"; };
-		9C80FDAB14B856F1003AE42E /* LargeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LargeImage.h; sourceTree = "<group>"; };
-		9C80FDAC14B856F1003AE42E /* LargeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LargeImage.m; sourceTree = "<group>"; };
+		9C80FDAB14B856F1003AE42E /* LargeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LargeImage.h; path = ../LargeImage.h; sourceTree = "<group>"; };
+		9C80FDAC14B856F1003AE42E /* LargeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LargeImage.m; path = ../LargeImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,9 +87,7 @@
 		9C80FD5614B7FE9A003AE42E = {
 			isa = PBXGroup;
 			children = (
-				9C80FDAB14B856F1003AE42E /* LargeImage.h */,
-				9C80FDAC14B856F1003AE42E /* LargeImage.m */,
-				9C80FD6B14B7FE9A003AE42E /* project1 */,
+				9C80FD6B14B7FE9A003AE42E /* What I See */,
 				9C80FD6414B7FE9A003AE42E /* Frameworks */,
 				9C80FD6214B7FE9A003AE42E /* Products */,
 			);
@@ -99,7 +96,7 @@
 		9C80FD6214B7FE9A003AE42E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C80FD6114B7FE9A003AE42E /* project1.app */,
+				9C80FD6114B7FE9A003AE42E /* What I See.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,9 +111,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9C80FD6B14B7FE9A003AE42E /* project1 */ = {
+		9C80FD6B14B7FE9A003AE42E /* What I See */ = {
 			isa = PBXGroup;
 			children = (
+				9C80FDAB14B856F1003AE42E /* LargeImage.h */,
+				9C80FDAC14B856F1003AE42E /* LargeImage.m */,
 				9C80FDA414B839C3003AE42E /* TakePhoto.h */,
 				9C80FDA514B839C3003AE42E /* TakePhoto.m */,
 				9C80FD7414B7FE9B003AE42E /* AppDelegate.h */,
@@ -130,8 +129,7 @@
 				9C80FD9D14B830F6003AE42E /* SmartImage.m */,
 				9C80FDA914B84E22003AE42E /* notfound.jpg */,
 				9C80FD7A14B7FE9B003AE42E /* MainStoryboard_iPad.storyboard */,
-				9C80FD9F14B838A8003AE42E /* black_camera_photo_icon.png */,
-				9C80FD7D14B7FE9B003AE42E /* FirstViewController.h */,
+				6C8C168214B9524A009DBDAB /* 1325996723_Black_Camera.png */,
 				9C80FD7E14B7FE9B003AE42E /* FirstViewController.m */,
 				9C80FD8014B7FE9B003AE42E /* first.png */,
 				9C80FD8214B7FE9B003AE42E /* first@2x.png */,
@@ -144,16 +142,17 @@
 				9C80FD9414B808CF003AE42E /* free_hires_wood_texture_4.jpeg */,
 				9C80FD6C14B7FE9A003AE42E /* Supporting Files */,
 			);
+			name = "What I See";
 			path = project1;
 			sourceTree = "<group>";
 		};
 		9C80FD6C14B7FE9A003AE42E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9C80FD6D14B7FE9A003AE42E /* project1-Info.plist */,
+				9C80FD6D14B7FE9A003AE42E /* What I See-Info.plist */,
 				9C80FD6E14B7FE9A003AE42E /* InfoPlist.strings */,
 				9C80FD7114B7FE9B003AE42E /* main.m */,
-				9C80FD7314B7FE9B003AE42E /* project1-Prefix.pch */,
+				9C80FD7314B7FE9B003AE42E /* What I See-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -161,9 +160,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9C80FD6014B7FE9A003AE42E /* project1 */ = {
+		9C80FD6014B7FE9A003AE42E /* What I See */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C80FD8D14B7FE9B003AE42E /* Build configuration list for PBXNativeTarget "project1" */;
+			buildConfigurationList = 9C80FD8D14B7FE9B003AE42E /* Build configuration list for PBXNativeTarget "What I See" */;
 			buildPhases = (
 				9C80FD5D14B7FE9A003AE42E /* Sources */,
 				9C80FD5E14B7FE9A003AE42E /* Frameworks */,
@@ -173,9 +172,9 @@
 			);
 			dependencies = (
 			);
-			name = project1;
+			name = "What I See";
 			productName = project1;
-			productReference = 9C80FD6114B7FE9A003AE42E /* project1.app */;
+			productReference = 9C80FD6114B7FE9A003AE42E /* What I See.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +185,7 @@
 			attributes = {
 				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = 9C80FD5B14B7FE9A003AE42E /* Build configuration list for PBXProject "project1" */;
+			buildConfigurationList = 9C80FD5B14B7FE9A003AE42E /* Build configuration list for PBXProject "What I See" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -198,7 +197,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9C80FD6014B7FE9A003AE42E /* project1 */,
+				9C80FD6014B7FE9A003AE42E /* What I See */,
 			);
 		};
 /* End PBXProject section */
@@ -218,8 +217,8 @@
 				9C80FD9114B804DC003AE42E /* 1325910249_face-monkey.png in Resources */,
 				9C80FD9314B805DC003AE42E /* face_happy_icon.png in Resources */,
 				9C80FD9514B808CF003AE42E /* free_hires_wood_texture_4.jpeg in Resources */,
-				9C80FDA014B838A9003AE42E /* black_camera_photo_icon.png in Resources */,
 				9C80FDAA14B84E22003AE42E /* notfound.jpg in Resources */,
+				6C8C168314B9524A009DBDAB /* 1325996723_Black_Camera.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,10 +322,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "project1/project1-Prefix.pch";
-				INFOPLIST_FILE = "project1/project1-Info.plist";
+				GCC_PREFIX_HEADER = "project1/What I See-Prefix.pch";
+				INFOPLIST_FILE = "project1/What I See-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "What I See";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -336,10 +335,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "project1/project1-Prefix.pch";
-				INFOPLIST_FILE = "project1/project1-Info.plist";
+				GCC_PREFIX_HEADER = "project1/What I See-Prefix.pch";
+				INFOPLIST_FILE = "project1/What I See-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "What I See";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -348,7 +347,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9C80FD5B14B7FE9A003AE42E /* Build configuration list for PBXProject "project1" */ = {
+		9C80FD5B14B7FE9A003AE42E /* Build configuration list for PBXProject "What I See" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C80FD8B14B7FE9B003AE42E /* Debug */,
@@ -357,13 +356,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C80FD8D14B7FE9B003AE42E /* Build configuration list for PBXNativeTarget "project1" */ = {
+		9C80FD8D14B7FE9B003AE42E /* Build configuration list for PBXNativeTarget "What I See" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C80FD8E14B7FE9B003AE42E /* Debug */,
 				9C80FD8F14B7FE9B003AE42E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

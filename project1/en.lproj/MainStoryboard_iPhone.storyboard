@@ -84,9 +84,12 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Take Photo" image="black_camera_photo_icon.png" id="QVd-hN-aQp"/>
+                    <tabBarItem key="tabBarItem" title="Take Photo" image="1325996723_Black_Camera.png" id="QVd-hN-aQp"/>
+                    <connections>
+                        <outlet property="SnapButton" destination="jgW-Se-13x" id="84h-wh-HAe"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="67" y="745"/>
@@ -235,8 +238,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="iIl-1s-1st" kind="relationship" relationship="viewControllers" id="cgb-vL-o3g"/>
-                        <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
                         <segue destination="ji3-uD-B0y" kind="relationship" relationship="viewControllers" id="vj8-kr-pdD"/>
+                        <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
                     </connections>
                 </tabBarController>
             </objects>
@@ -245,11 +248,45 @@
     </scenes>
     <resources>
         <image name="1325910249_face-monkey.png" width="32" height="32"/>
-        <image name="black_camera_photo_icon.png" width="40" height="40"/>
+        <image name="1325996723_Black_Camera.png" width="20" height="20"/>
         <image name="face_happy_icon.png" width="32" height="32"/>
         <image name="free_hires_wood_texture_4.jpeg" width="468" height="313"/>
         <image name="notfound.jpg" width="180" height="180"/>
     </resources>
+    <classes>
+        <class className="FirstViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
+        </class>
+        <class className="LargeImage" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LargeImage.h"/>
+            <relationships>
+                <relationship kind="action" name="Close:"/>
+                <relationship kind="action" name="SaveImage:"/>
+                <relationship kind="outlet" name="myImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="MugPile" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MugPile.h"/>
+        </class>
+        <class className="SmartImage" superclassName="UIImageView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SmartImage.h"/>
+        </class>
+        <class className="TakePhoto" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TakePhoto.h"/>
+            <relationships>
+                <relationship kind="action" name="SnapIt:"/>
+                <relationship kind="outlet" name="SnapButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="pictureRow" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/pictureRow.h"/>
+            <relationships>
+                <relationship kind="outlet" name="thumb1" candidateClass="SmartImage"/>
+                <relationship kind="outlet" name="thumb2" candidateClass="SmartImage"/>
+                <relationship kind="outlet" name="thumb3" candidateClass="SmartImage"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

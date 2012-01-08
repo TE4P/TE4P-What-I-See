@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#define serverURL @"http://10.1.1.187/ios/rcv.php"
+#define serverURL @"http://www.te4p.com/ios/rcv.php"
 
 @interface TakePhoto : UIViewController<UIImagePickerControllerDelegate>
 {    
@@ -15,5 +15,6 @@
     
 }
 - (IBAction)SnapIt:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *SnapButton;
 
 @end

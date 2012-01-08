@@ -13,7 +13,7 @@
 
 //#define kURL @"http://picasaweb.google.com/data/feed/api/user/flashout.net@gmail.com?alt=json"
 
-#define kURL @"http://10.1.1.187/ios/feed.php"
+#define kURL @"http://www.te4p.com/ios/feed.php"
 
 @implementation MugPile
 
