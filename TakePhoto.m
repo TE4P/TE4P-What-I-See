@@ -10,6 +10,8 @@
 
 @implementation TakePhoto
 @synthesize SnapButton;
+@synthesize UploadPreview;
+@synthesize UploadIndicator;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -74,13 +76,42 @@
     }
 }
 
+- (UIImage *)scaleImage:(UIImage *)image toSize:(CGSize)targetSize {
+    //If scaleFactor is not touched, no scaling will occur      
+    CGFloat scaleFactor = 1.0;
+    
+    //Deciding which factor to use to scale the image (factor = targetSize / imageSize)
+    if (image.size.width > targetSize.width || image.size.height > targetSize.height)
+        if (!((scaleFactor = (targetSize.width / image.size.width)) > (targetSize.height / image.size.height))) //scale to fit width, or
+            scaleFactor = targetSize.height / image.size.height; // scale to fit heigth.
+    
+    UIGraphicsBeginImageContext(targetSize); 
+    
+    //Creating the rect where the scaled image is drawn in
+    CGRect rect = CGRectMake((targetSize.width - image.size.width * scaleFactor) / 2,
+                             (targetSize.height -  image.size.height * scaleFactor) / 2,
+                             image.size.width * scaleFactor, image.size.height * scaleFactor);
+    
+    //Draw the image into the rect
+    [image drawInRect:rect];
+    
+    //Saving the image, ending image context
+    UIImage *scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return scaledImage;
+}
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     NSLog(@"picked");
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     
-    UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    // resize image
+    CGSize newSize = CGSizeMake(600, 600);
+    
+    UIImage *image = [self scaleImage:[info objectForKey:UIImagePickerControllerOriginalImage] toSize:newSize];
+
     NSURL *url = [NSURL URLWithString:serverURL];
     
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
@@ -88,9 +119,18 @@
     [request setHTTPMethod:@"POST"];
     [request setHTTPBody:UIImageJPEGRepresentation(image, 75)];
     
-    SnapButton.hidden = YES;
-    ipicker.view.hidden = YES;
+    // hide camera 
+    [UIView transitionWithView:self.view duration:0.5 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+            SnapButton.hidden = YES;
+            ipicker.view.hidden = YES;
+            
+            UploadPreview.hidden = NO;
+            UploadPreview.image = image;
+    } completion:^(BOOL finished) {
+        [UploadIndicator startAnimating];
+    }];
     
+    // send in background
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *err) {
         NSString *ret = [NSString stringWithUTF8String:[data bytes]];
         NSLog(@"responseData: %@", ret);  
@@ -108,22 +148,22 @@
             [a show];
         }
         
-        SnapButton.hidden = NO;
-        ipicker.view.hidden = NO;
+        [UIView transitionWithView:self.view duration:0.5 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+            SnapButton.hidden = NO;
+            ipicker.view.hidden = NO;
+            UploadPreview.hidden = YES;
+            [UploadIndicator stopAnimating];
+        } completion:nil];
         
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     }];
-    //                    sendSynchronousRequest:request returningResponse:&response error:&err];
-}
-
--(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
-{
-    
 }
 
 - (void)viewDidUnload
 {
     [self setSnapButton:nil];
+    [self setUploadPreview:nil];
+    [self setUploadIndicator:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

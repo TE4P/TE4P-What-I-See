@@ -137,11 +137,13 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [self becomeFirstResponder];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
+    [self resignFirstResponder];
 }
 
 - (void)viewDidDisappear:(BOOL)animated

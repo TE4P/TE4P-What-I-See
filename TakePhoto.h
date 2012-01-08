@@ -16,5 +16,7 @@
 }
 - (IBAction)SnapIt:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *SnapButton;
+@property (weak, nonatomic) IBOutlet UIImageView *UploadPreview;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *UploadIndicator;
 
 @end

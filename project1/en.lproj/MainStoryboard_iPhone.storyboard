@@ -83,12 +83,22 @@
                                     <action selector="SnapIt:" destination="ji3-uD-B0y" eventType="touchUpInside" id="r2N-cb-4fY"/>
                                 </connections>
                             </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="UBK-Jw-oo9">
+                                <rect key="frame" x="10" y="50" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" id="S4m-wQ-ARA">
+                                <rect key="frame" x="142" y="358" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Take Photo" image="1325996723_Black_Camera.png" id="QVd-hN-aQp"/>
                     <connections>
                         <outlet property="SnapButton" destination="jgW-Se-13x" id="84h-wh-HAe"/>
+                        <outlet property="UploadIndicator" destination="S4m-wQ-ARA" id="kVQ-cg-tfK"/>
+                        <outlet property="UploadPreview" destination="UBK-Jw-oo9" id="eDX-eG-WJN"/>
                     </connections>
                 </viewController>
             </objects>
@@ -276,6 +286,8 @@
             <relationships>
                 <relationship kind="action" name="SnapIt:"/>
                 <relationship kind="outlet" name="SnapButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="UploadIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="UploadPreview" candidateClass="UIImageView"/>
             </relationships>
         </class>
         <class className="pictureRow" superclassName="UITableViewCell">

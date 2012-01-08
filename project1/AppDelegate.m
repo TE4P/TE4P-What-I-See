@@ -11,10 +11,12 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize imagecache;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    imagecache = [[NSMutableDictionary alloc] init];
     return YES;
 }
 							
